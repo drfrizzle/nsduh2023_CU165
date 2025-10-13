@@ -1,0 +1,19 @@
+Package: nsduhpackage
+Title: Data for Cumberland University BIO 165 Major Project
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given = c("Julie","Baker"), family = "Phillips",
+           email = "jphillips@cumberland.edu",
+           role = c("aut","cre"),
+           comment = c(ORCID = "https://orcid.org/0000-0002-5290-8745")),
+    person(given = "Holly", family = "Gothard",
+           role = "ctb")
+           )
+Description: A curated subset of variables from the 2023 National Survey on Drug Use and Health (NSDUH), prepared for use in Cumberland University’s Introduction to Quantitative Analysis course. The dataset supports student research on early substance use, treatment, mental health, and socioeconomic context.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends: 
+    R (>= 3.5)
+LazyData: true
