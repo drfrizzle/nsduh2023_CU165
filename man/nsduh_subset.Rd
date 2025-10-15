@@ -470,7 +470,7 @@ NA: \tab Never used \cr
 \code{inst/extdata} for reference.
 }
 \usage{
-nsduh_subset
+data(nsduh_subset)
 }
 \description{
 A curated subset of variables from the 2023 National Survey on Drug Use and Health (NSDUH),

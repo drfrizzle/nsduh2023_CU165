@@ -476,4 +476,8 @@
 #' @examples
 #' str(nsduh_subset)
 #' table(nsduh_subset$ALCFLAG, useNA = "ifany")
-"nsduh_subset"
+#' @docType data
+#' @usage data(nsduh_subset)
+#' @keywords datasets
+#' @name nsduh_subset
+NULL
