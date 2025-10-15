@@ -3,95 +3,471 @@
 \docType{data}
 \name{nsduh_subset}
 \alias{nsduh_subset}
-\title{NSDUH analytic subset (selected variables)}
+\title{NSDUH 2023 Analytic Subset (selected variables)}
 \format{
-A data frame with N rows and the following variables (value labels shown):
+A data frame with 56705 observations of the following variables (value labels shown):
 
 \describe{
-\item{CATAG2}{Age category (3 levels). 1 = 12–17; 2 = 18–25; 3 = 26+.
-\href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:0‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{CATAG7}{Age category (7 levels). Values = 1: 12–13; 2: 14–15; 3: 16–17; 4: 18–20; 5: 21–25; 6: 26–34; 7: 35+.
-\href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:1‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRSEX}{Sex at birth. 1 = Male; 2 = Female.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:2‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{NEWRACE2}{Race/ethnicity (7-level). 1 = NH White; 2 = NH Black/African American;
-3 = NH Native American/AK Native; 4 = NH Native Hawaiian/Other Pacific Islander;
-5 = NH Asian; 6 = NH ≥2 races; 7 = Hispanic.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:3‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{AGE3}{Age group (broad). 1 = 12–17; 2 = 18–25; 3 = 26–34; 4 = 35+.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:4‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRMARIT}{Marital status (recoded). 1 = Married; 2 = Widowed; 3 = Divorced;
-4 = Separated; 5 = Never married.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:5‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRHHSIZ2}{Household size. 1–13 = number of persons; 91 = 13+ (top-coded where applicable).
-\href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:6‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{EDUHIGHCAT}{Highest education (adult). 1 = < HS; 2 = HS grad/GED; 3 = Some college/Assoc; 4 = College grad+.
-\href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:7‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{HEALTH2}{Self-rated health. 1 = Excellent; 2 = Very good; 3 = Good; 4 = Fair; 5 = Poor.
-\href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:8‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRWRKSTAT}{Employment status (recoded). 1 = Full-time; 2 = Part-time; 3 = Unemployed; 4 = Other/not in labor force.
-\href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:9‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
+\item{CATAG2}{Age category (3 levels):\cr
+\tabular{ll}{
+1: \tab 12--17 years \cr
+2: \tab 18--25 years \cr
+3: \tab 26+ years \cr
+}
+}
+\item{CATAG3}{Age category (5 levels):\cr
+\tabular{ll}{
+1: \tab 12--17 years \cr
+2: \tab 18--25 years \cr
+3: \tab 26--34 years \cr
+4: \tab 35--49 years \cr
+5: \tab 50+ years \cr
+}
+}
 
-\item{IRMEDICR}{Covered by Medicare. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:10‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRMCDCHP}{Covered by Medicaid/CHIP. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:11‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRINSUR4}{Any health insurance coverage. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:12‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{GOVTPROG}{Family receives government assistance. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:13‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRFAMIN3}{Family income (recoded). 1 = <$10k; 2 = $10–19,999; 3 = $20–29,999; 4 = $30–39,999; 5 = $40–49,999;
-6 = $50–74,999; 7 = $75k+.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:14‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRPINC3}{Individual income (recoded). Brackets analogous to family; see codebook banding.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:15‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
+\item{CATAG7}{Age category (7 levels):\cr
+\tabular{ll}{
+1: \tab 12--13 \cr
+2: \tab 14--15 \cr
+3: \tab 16--17 \cr
+4: \tab 18--20 \cr
+5: \tab 21--25 \cr
+6: \tab 26--34 \cr
+7: \tab 35+ \cr
+}
+}
 
-\item{TOBFLAG}{Any tobacco product—ever used. 0 = Never; 1 = Ever.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:16‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{CIGFLAG}{Ever smoked a cigarette. 0 = Never; 1 = Ever.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:17‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRCIGAGE}{Age at first cigarette. 1–90 = age in years; 991 = Never used.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:18‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{ALCFLAG}{Alcohol—ever used. 0 = Never; 1 = Ever.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:19‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRALCAGE}{Age at first alcohol use. 1–90 = age in years; 991 = Never used.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:20‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{MRJFLAG}{Marijuana—ever used. 0 = Never; 1 = Ever.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:21‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRMJAGE}{Age at first marijuana use. 1–90 = age in years; 991 = Never used.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:22‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{ILLEMFLAG}{Illicit drug other than marijuana—ever used. 0 = Never/only MJ; 1 = Ever used other illicit drug.
-\href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:23‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
+\item{IRSEX}{Sex at birth:\cr
+\tabular{ll}{
+1: \tab Male \cr
+2: \tab Female \cr
+}
+}
 
-\item{FUCIG18}{Used cigarettes prior to age 18. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:24‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{FUCIG21}{Used cigarettes prior to age 21. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:25‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{FUALC18}{Used alcohol prior to age 18. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:26‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{FUALC21}{Used alcohol prior to age 21. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:27‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{FUMJ18}{Used marijuana prior to age 18. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:28‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{FUMJ21}{Used marijuana prior to age 21. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:29‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
+\item{NEWRACE2}{Race/ethnicity (7 levels):\cr
+\tabular{ll}{
+1: \tab Non-Hispanic White \cr
+2: \tab Non-Hispanic Black/African American \cr
+3: \tab Non-Hispanic American Indian/Alaska Native \cr
+4: \tab Non-Hispanic Native Hawaiian/Other Pacific Islander \cr
+5: \tab Non-Hispanic Asian \cr
+6: \tab Non-Hispanic \eqn{\,\ge\,} 2 races \cr
+7: \tab Hispanic \cr
+}
+}
 
-\item{IRPYUD5ALC}{Alcohol use disorder, past year (DSM-5, imputation-revised). 0 = No; 1 = Yes; see severity in \code{IRPYSEV5ALC}.
-\href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:30‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRPYUD5MRJ}{Marijuana use disorder, past year (DSM-5, imputation-revised). 0 = No; 1 = Yes; see severity in \code{IRPYSEV5MRJ}.
-\href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:31‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRPYSEV5ALC}{Alcohol use-disorder severity (past year). 1 = Mild; 2 = Moderate; 3 = Severe; 9 = No past-year SUD.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:32‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{RPYSEV5MRJ}{Marijuana use-disorder severity (past year). 1 = Mild; 2 = Moderate; 3 = Severe; 9 = No past-year SUD.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:33‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
+\item{IRMARIT}{Marital status:\cr
+\tabular{ll}{
+1: \tab Married \cr
+2: \tab Widowed \cr
+3: \tab Divorced \cr
+4: \tab Separated \cr
+5: \tab Never married \cr
+99: \tab Respondent \eqn{\,\leq\,} 14 years old \cr
+}
+}
 
-\item{IRSUTSUPPGRP}{Participated in a support group for substance use, past year. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:34‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRSUTERED}{Seen in ER for substance use, past year. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:35‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRSUTINHOSP}{Received substance treatment at hospital as inpatient, past year. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:36‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRSUTINRHAB}{Received substance treatment at residential/rehab facility, past year. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:37‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRSUTOUTRHAB}{Received substance treatment as outpatient/rehab, past year. 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:38‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{SUTRTALCPY}{Received substance use treatment for alcohol use (past year, recode). 0 = No/unspecified; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:39‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
+\item{IRHHSIZ2}{Household size (persons):\cr
+\tabular{ll}{
+1--5 \tab Count of persons \cr
+6: \tab 6 or more people in household \cr
+}
+}
 
-\item{IRDSTNGD12}{How often felt down on yourself/no good/worthless—worst month in past year.
-1 = All; 2 = Most; 3 = Some; 4 = A little; 5 = None. (Imputation-revised scale component.)  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:40‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRSUICTHNK}{Seriously thought about killing self, past year (adult, imputation-revised). 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:41‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{SMIPY}{Serious Mental Illness (AMI model, past year). 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:42‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{AMIPY}{Any Mental Illness (AMI model, past year). 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:43‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{AMDEYR}{Major depressive episode, past year (adult, imputation-revised). 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:44‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{IRMHTSUPPGRP}{Participated in support group for mental health, past year (imputation-revised). 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:45‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{MHTRTPY}{Received mental health treatment, past year (recode). 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:46‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{MHNTINSCV}{Unmet MH treatment need due to no insurance coverage (among those with unmet need). 0 = No; 1 = Yes.
-\href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:47‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{MHNTTIME}{Unmet MH treatment need due to not enough time (among those with unmet need). 0 = No; 1 = Yes.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:48‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{MHNTPTHNK}{Unmet MH treatment need—worried what people would think (stigma; among those with unmet need). 0 = No; 1 = Yes.
-\href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:49‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
+\item{EDUHIGHCAT}{Highest education (adult):\cr
+\tabular{ll}{
+1: \tab \eqn{\,\lt\,} High school \cr
+2: \tab High school grad/GED \cr
+3: \tab Some college/Associate \cr
+4: \tab College graduate+ \cr
+5: \tab 12 to 17 years old
+}
+}
 
-\item{ASDSREL2}{Role impairment—close relationships (Sheehan Disability Scale; worst past-year month). 0 = None; 1 = Mild; 2 = Moderate;
-3 = Severe; 4 = Very severe.  \href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:50‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{ASDSWRK2}{Role impairment—ability to work (SDS; worst past-year month). 0 = None; 1 = Mild; 2 = Moderate; 3 = Severe; 4 = Very severe.
-\href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:51‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
-\item{ASDSSOC2}{Role impairment—social life (SDS; worst past-year month). 0 = None; 1 = Mild; 2 = Moderate; 3 = Severe; 4 = Very severe.
-\href{sediment://file_000000003cac622f9b92f2e3c98ba1ea}{oai_citation:52‡nsduh-2023-ds0001-info-codebook_v2.pdf}}
+\item{HEALTH2}{Self-rated health:\cr
+\tabular{ll}{
+1: \tab Excellent \cr
+2: \tab Very good \cr
+3: \tab Good \cr
+4: \tab Fair/Poor \cr
+}
+}
+
+\item{IRWRKSTAT}{Employment status (recoded):\cr
+\tabular{ll}{
+1 \tab Full-time \cr
+2 \tab Part-time \cr
+3 \tab Unemployed \cr
+4 \tab Other/not in labor force \cr
+99: \tab Respondent \eqn{\,\le\,} 14 years old \cr
+}
+}
+
+\item{IRMEDICR}{Covered by Medicare:\cr
+\tabular{ll}{
+1: \tab Yes \cr
+2: \tab No \cr
+}
+}
+
+\item{IRMCDCHP}{Covered by Medicaid/CHIP:\cr
+\tabular{ll}{
+1: \tab Yes \cr
+2: \tab No \cr
+}
+}
+
+\item{IRINSUR4}{Any health-insurance coverage: Coverage includes Medicare, Medicaid/CHIP, Tricare, Champus, ChampVA, VA, or by private health insurance \cr
+\tabular{ll}{
+1: \tab Yes \cr
+2: \tab No \cr
+}
+}
+
+\item{GOVTPROG}{Family receives government assistance:\cr
+\tabular{ll}{
+1: \tab Yes \cr
+2: \tab No \cr
+}
+}
+
+\item{IRFAMIN3}{Family income:\cr
+\tabular{ll}{
+1: \tab \eqn{\,\le\,} $10,000 \cr
+2: \tab $10,000--19,999 \cr
+3: \tab $20,000--29,999 \cr
+4: \tab $30,000--39,999 \cr
+5: \tab $40,000--49,999 \cr
+6: \tab $50,000--74,999 \cr
+7: \tab $75,000+ \cr
+}
+}
+
+\item{IRPINC3}{Individual income:\cr
+\tabular{ll}{
+1: \tab \eqn{\,\le\,} $10,000 \cr
+2: \tab $10,000--19,999 \cr
+3: \tab $20,000--29,999 \cr
+4: \tab $30,000--39,999 \cr
+5: \tab $40,000--49,999 \cr
+6: \tab $50,000--74,999 \cr
+7: \tab $75,000+ \cr
+}
+}
+
+\item{TOBFLAG}{Any tobacco product—ever used:\cr
+\tabular{ll}{
+0: \tab Never Used \cr
+1: \tab Ever Used \cr
+}
+}
+
+\item{CIGFLAG}{Ever smoked a cigarette:\cr
+\tabular{ll}{
+0: \tab Never Used\cr
+1: \tab Ever Used\cr
+}
+}
+
+\item{IRCIGAGE}{Age at first cigarette use:\cr
+\tabular{ll}{
+1--90 \tab Age in years \cr
+NA \tab Never used \cr
+}
+}
+
+\item{IRCIGAGE_cat}{Age at first cigarette use (categorical, 5 levels):\cr
+\tabular{ll}{
+1: \tab 12--17 years \cr
+2: \tab 18--25 years \cr
+3: \tab 26--34 years \cr
+4: \tab 35--49 years \cr
+5: \tab 50+ years \cr
+NA: \tab Never used \cr
+}
+}
+
+\item{ALCFLAG}{Alcohol—ever used:\cr
+\tabular{ll}{
+0 \tab Never \cr
+1 \tab Ever \cr
+}
+}
+
+\item{IRALCAGE}{Age at first alcohol use:\cr
+\tabular{ll}{
+1--90 \tab Age in years \cr
+NA \tab Never used \cr
+}
+}
+
+\item{IRALCAGE_cat}{Age at first alcohol use (categorical, 5 levels):\cr
+\tabular{ll}{
+1: \tab 12--17 years \cr
+2: \tab 18--25 years \cr
+3: \tab 26--34 years \cr
+4: \tab 35--49 years \cr
+5: \tab 50+ years \cr
+NA: \tab Never used \cr
+}
+}
+
+\item{MRJFLAG}{Marijuana—ever used:\cr
+\tabular{ll}{
+0: \tab Never used\cr
+1: \tab Ever used \cr
+}
+}
+
+\item{IRMJAGE}{Age at first marijuana use:\cr
+\tabular{ll}{
+1--90: \tab Age in years \cr
+NA: \tab Never used \cr
+}
+}
+
+\item{IRMJAGE_cat}{Age at first marijuana use (categorical, 5 levels):\cr
+\tabular{ll}{
+1: \tab 12--17 years \cr
+2: \tab 18--25 years \cr
+3: \tab 26--34 years \cr
+4: \tab 35--49 years \cr
+5: \tab 50+ years \cr
+NA: \tab Never used \cr
+}
+}
+
+\item{ILLEMFLAG}{Illicit drug other than marijuana—ever used:\cr
+\tabular{ll}{
+0: \tab Never used drug/used only marijuana \cr
+1: \tab Ever used an illicit drug except for marijuana\cr
+}
+}
+
+\item{FUCIG18}{Used cigarettes prior to age 18:\cr
+\tabular{ll}{
+1: \tab Yes \cr
+2: \tab No \cr
+}
+}
+
+\item{FUCIG21}{Used cigarettes prior to age 21:\cr
+\tabular{ll}{
+1: \tab Yes \cr
+2: \tab No \cr
+}
+}
+
+\item{FUALC18}{Used alcohol prior to age 18:\cr
+\tabular{ll}{
+1: \tab Yes \cr
+2: \tab No \cr
+}
+}
+
+\item{FUALC21}{Used alcohol prior to age 21:\cr
+\tabular{ll}{
+1: \tab Yes \cr
+2: \tab No \cr
+}
+}
+
+\item{FUMJ18}{Used marijuana prior to age 18:\cr
+\tabular{ll}{
+1: \tab Yes \cr
+2: \tab No \cr
+}
+}
+
+\item{FUMJ21}{Used marijuana prior to age 21:\cr
+\tabular{ll}{
+1: \tab Yes \cr
+2: \tab No \cr
+}
+}
+
+\item{IRPYUD5ALC}{Alcohol use disorder, past year (based on DSM-5 criteria):\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{IRPYUD5MRJ}{Marijuana use disorder, past year (based on DSM-5 criteria):\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{IRPYSEV5ALC}{Alcohol use-disorder severity (past year, based on DSM-5 criteria):\cr
+\tabular{ll}{
+1: \tab Mild disorder\cr
+2: \tab Moderate disorder\cr
+3: \tab Severe disorder\cr
+9: \tab No past-year use disorder \cr
+}
+}
+
+\item{RPYSEV5MRJ}{Marijuana use-disorder severity (past year, based on DSM-5 criteria):\cr
+\tabular{ll}{
+1: \tab Mild disorder\cr
+2: \tab Moderate disorder\cr
+3: \tab Severe disorder\cr
+9: \tab No past-year use disorder \cr
+}
+}
+
+\item{IRSUTSUPPGRP}{Participated in a support group for substance use, past year:\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{IRSUTERED}{Seen in ER for substance use, past year:\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{IRSUTINHOSP}{Substance treatment at hospital as inpatient, past year:\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{IRSUTINRHAB}{Substance treatment at residential/rehab facility, past year:\cr
+\tabular{ll}{
+0 \tab No \cr
+1 \tab Yes \cr
+}
+}
+
+\item{IRSUTOUTRHAB}{Substance treatment as outpatient/rehab, past year:\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{SUTRTALCPY}{Received substance-use treatment for alcohol use (past year):\cr
+\tabular{ll}{
+0: \tab No/unspecified \cr
+1: \tab Yes \cr
+}
+}
+
+\item{IRDSTNGD12}{Felt down on yourself/no good/worthless—worst month in past year:\cr
+\tabular{ll}{
+1: \tab All of the time \cr
+2: \tab Most of the time \cr
+3: \tab Some of the time\cr
+4: \tab A little of the time\cr
+5: \tab None of the time \cr
+99: \tab Legitimate skip \cr
+}
+}
+
+\item{IRSUICTHNK}{Seriously considered suicide, past year (adult only):\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{SMIPY}{Serious Mental Illness (past year):\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{AMIPY}{Any Mental Illness (past year):\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{AMDEYR}{Major depressive episode, past year (adult):\cr
+\tabular{ll}{
+1: \tab Yes \cr
+2: \tab No \cr
+}
+}
+
+\item{IRMHTSUPPGRP}{Participated in support group for mental health, past year:\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{MHTRTPY}{Received mental health treatment, past year (recode):\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{MHNTINSCV}{Unmet mental health treatment need due to no insurance coverage (among those with unmet need):\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{MHNTTIME}{Unmet mental health treatment need due to not enough time (among those with unmet need):\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{MHNTPTHNK}{Unmet mental health treatment need—worried what people would think (stigma; among those with unmet need):\cr
+\tabular{ll}{
+0: \tab No \cr
+1: \tab Yes \cr
+}
+}
+
+\item{ASDSREL2}{Role impairment—close relationships (Sheehan Disability Scale; worst past-year month):\cr
+\tabular{ll}{
+1: \tab None \cr
+2: \tab Mild \cr
+3: \tab Moderate \cr
+4: \tab Severe \cr
+5: \tab Very severe \cr
+}
+}
+
+\item{ASDSWRK2}{Role impairment—ability to work (Sheehan Disability Scale; worst past-year month):\cr
+\tabular{ll}{
+1: \tab None \cr
+2: \tab Mild \cr
+3: \tab Moderate \cr
+4: \tab Severe \cr
+5: \tab Very severe \cr
+}
+}
+
+\item{ASDSSOC2}{Role impairment—social life (Sheehan Disability Scale; worst past-year month):\cr
+\tabular{ll}{
+1: \tab None \cr
+2: \tab Mild \cr
+3: \tab Moderate \cr
+4: \tab Severe \cr
+5: \tab Very severe \cr
+}
+}
 }
 }
 \source{
-2023 NSDUH Public Use File (PUF) Codebook. See citations in variable list. The full codebook
-is provided in your package \code{inst/extdata} for reference.
+2023 NSDUH Public Use File (PUF) Codebook. If desired, include the PDF in
+\code{inst/extdata} for reference.
 }
 \usage{
 nsduh_subset
@@ -102,14 +478,12 @@ prepared for coursework and research on early substance use, treatment, mental h
 and socioeconomic context.
 }
 \details{
-Coding follows NSDUH 2023 conventions; many items are imputation-revised (\code{IR*}) recodes
-where 0 = No and 1 = Yes for dichotomies. Where NSDUH top-codes or uses special missing values
-(e.g., 91/93/97/98/99), retain them as delivered unless you explicitly recode for analysis; consult the
-codebook if you need those special codes preserved for inference. See cited sections for exact wording
-and construction notes (e.g., DSM-5 SUDs and AMI/SMI prediction model inputs).
+Coding follows NSDUH 2023 conventions; many items are imputation-revised (\code{IR*}) recodes. Where
+NSDUH top-codes or uses special missing values retain them as delivered unless you explicitly recode
+for analysis; consult the codebook if you need those special codes preserved for inference. DSM-5 SUDs
+and AMI/SMI model constructions follow NSDUH documentation.
 }
 \examples{
-# Quick peek
 str(nsduh_subset)
 table(nsduh_subset$ALCFLAG, useNA = "ifany")
 }
